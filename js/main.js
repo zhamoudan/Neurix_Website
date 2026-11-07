@@ -117,7 +117,7 @@
             <a href="${base}productos/factura.html">Factura</a>
             <a href="https://tvcloud.app/" target="_blank" rel="noopener noreferrer">TVcloud</a>
             <a href="https://ibocast.com/" target="_blank" rel="noopener noreferrer">Ibocast Media Player</a>
-            <a href="${base}productos/walk-wag.html">Walk&amp;Wag</a>
+            <a href="${base}productos/walk-wag.html">Walk &amp; Wags</a>
           </div>
           <div class="footer-col">
             <h3 data-i18n="footer.resources">Recursos</h3>
