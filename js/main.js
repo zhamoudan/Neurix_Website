@@ -115,8 +115,8 @@
             <a href="https://iroomfy.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer">iRoomfy</a>
             <a href="https://pozlee.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer">Pozlee</a>
             <a href="${base}productos/factura.html">Factura</a>
-            <a href="${base}productos/tvcloud.html">TVcloud</a>
-            <a href="${base}productos/ibocast.html">Ibocast Media Player</a>
+            <a href="https://tvcloud.app/" target="_blank" rel="noopener noreferrer">TVcloud</a>
+            <a href="https://ibocast.com/" target="_blank" rel="noopener noreferrer">Ibocast Media Player</a>
             <a href="${base}productos/walk-wag.html">Walk&amp;Wag</a>
           </div>
           <div class="footer-col">

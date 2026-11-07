@@ -1,118 +1,402 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Walk&Wag — app móvil para la comunidad de propietarios de perros.">
-  <title>Walk&amp;Wag — Neurix Innovación</title>
+  <meta name="description" content="Walk&Wag — the privacy-first Tinder for dogs. Match with local pup pals, send a Bark, and explore live routes safely together.">
+  <title>Walk&amp;Wag — Find Dog Pals Nearby</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/walk-wag.css">
+  <link rel="icon" href="../images/products/Walk-and-Wag.png" type="image/png">
 </head>
-<body data-page="products" data-depth="1">
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <div id="site-header"></div>
+<body class="ww-page">
+  <a class="ww-skip" href="#contenido">Skip to content</a>
+
+  <header class="ww-header" id="ww-header">
+    <div class="ww-wrap ww-header-inner">
+      <a class="ww-brand" href="#top" aria-label="Walk&amp;Wag">
+        <img src="../images/products/Walk-and-Wag.png" alt="" width="40" height="40">
+        <span>Walk&amp;Wag</span>
+      </a>
+      <div class="ww-header-actions">
+        <div class="ww-lang" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="ww-store ww-header-cta" href="#download" data-i18n-aria="ww.downloadAria" aria-label="Download Walk&amp;Wag">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span class="ww-store-copy"><small data-i18n="ww.getOn">Get the app</small><strong data-i18n="ww.download">Download</strong></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
   <main id="contenido">
-    <section class="product-hero">
-      <div class="container product-hero-grid">
-        <div>
-          <p class="kicker">Walk&amp;Wag</p>
-          <h1 class="display" data-i18n="p.title">La comunidad de paseos, rutas y momentos con tu perro.</h1>
-          <p class="lead" data-i18n="p.lead">Walk&amp;Wag es la aplicación móvil de Neurix para propietarios de perros: rutas, quedadas y momentos compartidos alrededor de lo que más importa — tu compañero.</p>
-          <div class="product-hero-actions">
-            <a class="btn btn-primary" href="../contacto/index.html" data-i18n="p.notify">Avisarme del lanzamiento</a>
-            <a class="btn btn-outline" href="index.html" data-i18n="common.backProducts">Todos los productos</a>
+    <section class="ww-hero" id="top">
+      <div class="ww-wrap ww-hero-grid">
+        <div class="ww-hero-copy ww-reveal">
+          <p class="ww-kicker">
+            <img src="../images/products/Walk-and-Wag.png" alt="" width="44" height="44">
+            Walk&amp;Wag
+          </p>
+          <h1 data-i18n="ww.heroTitle">Find Dog Pals Nearby, Without Sharing Your Privacy.</h1>
+          <p class="ww-lead" data-i18n="ww.heroLead">The Tinder-style discovery app for dog owners. Match with local pup pals, send a Bark, and explore live routes safely together.</p>
+          <div class="ww-hero-actions">
+            <div class="ww-store-row">
+              <a class="ww-store" href="#download" id="cta-ios">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <span class="ww-store-copy"><small data-i18n="ww.iosSmall">Download on the</small><strong data-i18n="ww.iosStrong">App Store</strong></span>
+              </a>
+              <a class="ww-store" href="#download" id="cta-android">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
+                <span class="ww-store-copy"><small data-i18n="ww.androidSmall">Get it on</small><strong data-i18n="ww.androidStrong">Google Play</strong></span>
+              </a>
+            </div>
+            <a class="ww-link-secondary" href="#how" data-i18n="ww.watchHow">Watch How It Works 🐾</a>
           </div>
         </div>
-        <div class="product-panel visual-photo" aria-hidden="true"><img src="../images/walk-wag.jpeg" alt=""></div>
+
+        <div class="ww-phones ww-reveal" aria-hidden="true">
+          <div class="ww-phone ww-phone--ios">
+            <div class="ww-phone-screen">
+              <div class="ww-phone-notch"></div>
+              <div class="ww-phone-bar"><span>9:41</span><span>●●●</span></div>
+              <div class="ww-phone-title">Go Live</div>
+              <div class="ww-swipe-stack">
+                <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
+                <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
+                <article class="ww-swipe-card">
+                  <div class="ww-swipe-photo">
+                    <div class="ww-swipe-meta">
+                      <strong>Luna · Golden</strong>
+                      <span>High energy · 0.4 km</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="ww-swipe-actions"><span>✕</span><span>♥</span><span>↗</span></div>
+            </div>
+          </div>
+          <div class="ww-phone ww-phone--android">
+            <div class="ww-phone-screen">
+              <div class="ww-phone-bar"><span>9:41</span><span>▾</span></div>
+              <div class="ww-phone-title">WagMap</div>
+              <div class="ww-map-screen">
+                <span class="ww-map-pin ww-map-pin--a"></span>
+                <span class="ww-map-route"></span>
+                <span class="ww-map-pin ww-map-pin--b"></span>
+                <div class="ww-map-chip"><em>2</em> accepted partners · privacy on</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="section section--soft">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="display-md" data-i18n="p.whyTitle">Más que una app de paseos</h2>
-          <p class="lead" data-i18n="p.whyLead">Conectar personas que comparten la vida con un perro: descubrir rutas, quedar y guardar momentos.</p>
+
+    <section class="ww-section" id="features">
+      <div class="ww-wrap">
+        <div class="ww-section-head ww-reveal">
+          <h2 data-i18n="ww.featTitle">Built for walks. Obsessed with privacy.</h2>
+          <p data-i18n="ww.featLead">Everything you need to discover dog pals nearby — without exposing your location or phone number.</p>
         </div>
-        <div class="benefit-grid">
-          <article class="benefit-card"><h3 data-i18n="p.b1t">Rutas</h3><p data-i18n="p.b1d">Descubre y comparte recorridos pensados para pasear con tu perro.</p></article>
-          <article class="benefit-card"><h3 data-i18n="p.b2t">Quedadas</h3><p data-i18n="p.b2d">Organiza encuentros con otros propietarios cerca de ti.</p></article>
-          <article class="benefit-card"><h3 data-i18n="p.b3t">Momentos</h3><p data-i18n="p.b3d">Guarda y comparte lo cotidiano que hace especial la vida con tu perro.</p></article>
+        <div class="ww-features">
+          <article class="ww-feature ww-reveal">
+            <div class="ww-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c1.5 0 2.5 1.5 2.5 3S13.5 10 12 10 9.5 8.5 9.5 7 10.5 4 12 4z"/><path d="M6.5 7c1.2 0 2 1.2 2 2.5S7.7 12 6.5 12 4.5 10.8 4.5 9.5 5.3 7 6.5 7z"/><path d="M17.5 7c1.2 0 2 1.2 2 2.5S18.7 12 17.5 12 15.5 10.8 15.5 9.5 16.3 7 17.5 7z"/><path d="M8 14c1.5-1 3-1.5 4-1.5s2.5.5 4 1.5c1.2.8 2 2 2 3.5 0 1.5-1.5 2.5-4 2.5h-4c-2.5 0-4-1-4-2.5 0-1.5.8-2.7 2-3.5z"/></svg>
+            </div>
+            <h3 data-i18n="ww.f1t">Tinder for Dogs</h3>
+            <p data-i18n="ww.f1d">Swipe through nearby pup profiles — photo, breed, energy level, and distance — before starting your walk.</p>
+          </article>
+          <article class="ww-feature ww-reveal">
+            <div class="ww-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><circle cx="12" cy="16" r="1.5"/></svg>
+            </div>
+            <h3 data-i18n="ww.f2t">Absolute Location Privacy</h3>
+            <p data-i18n="ww.f2d">Your raw GPS location stays 100% hidden on WagMap until a mutual Bark request is accepted.</p>
+          </article>
+          <article class="ww-feature ww-reveal">
+            <div class="ww-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2.1-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            </div>
+            <h3 data-i18n="ww.f3t">Barks Chat</h3>
+            <p data-i18n="ww.f3d">Connect and coordinate walk times via @username — no personal phone numbers required.</p>
+          </article>
+          <article class="ww-feature ww-reveal">
+            <div class="ww-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 10-14h-7l0-6z"/></svg>
+            </div>
+            <h3 data-i18n="ww.f4t">Go Live Stats</h3>
+            <p data-i18n="ww.f4d">Track walk duration, distance covered (km), and your walk history in real time.</p>
+          </article>
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-head"><h2 class="display-md" data-i18n="p.featTitle">En desarrollo</h2></div>
-        <div class="feature-list">
-          <div class="feature-row"><h3 data-i18n="p.f1t">Comunidad local</h3><p data-i18n="p.f1d">Conexión entre propietarios con intereses y zonas en común.</p></div>
-          <div class="feature-row"><h3 data-i18n="p.f2t">Experiencia móvil</h3><p data-i18n="p.f2d">Diseño pensado para usarse en movimiento, durante el paseo.</p></div>
-          <div class="feature-row"><h3 data-i18n="p.f3t">Producto Neurix</h3><p data-i18n="p.f3d">Misma exigencia de calidad, UX y arquitectura que el resto de la suite.</p></div>
-          <div class="feature-row"><h3 data-i18n="p.f4t">Próximamente</h3><p data-i18n="p.f4d">Estamos construyendo Walk&amp;Wag. Si quieres ser de los primeros, escríbenos.</p></div>
+
+    <section class="ww-section ww-section--navy" id="how">
+      <div class="ww-wrap">
+        <div class="ww-section-head ww-reveal">
+          <h2 data-i18n="ww.howTitle">How it works</h2>
+          <p data-i18n="ww.howLead">Three simple steps from discovery to a safe walk together.</p>
+        </div>
+        <div class="ww-steps">
+          <article class="ww-step ww-reveal">
+            <div class="ww-step-visual" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/><path d="M9 8h6M9 11h4"/></svg>
+            </div>
+            <h3 data-i18n="ww.s1t">Go Live</h3>
+            <p data-i18n="ww.s1d">Start your walk session and browse nearby dog pals one by one.</p>
+          </article>
+          <article class="ww-step ww-reveal">
+            <div class="ww-step-visual" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            </div>
+            <h3 data-i18n="ww.s2t">Send a Bark</h3>
+            <p data-i18n="ww.s2d">Request to join a walk with a simple tap — mutual consent first.</p>
+          </article>
+          <article class="ww-step ww-reveal">
+            <div class="ww-step-visual" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <h3 data-i18n="ww.s3t">WagMap Together</h3>
+            <p data-i18n="ww.s3d">Once accepted, view live locations and start walking together safely.</p>
+          </article>
         </div>
       </div>
     </section>
-    <section class="section section--soft">
-      <div class="container">
-        <div class="cta-band">
-          <div><h2 data-i18n="p.ctaTitle">¿Quieres saber cuándo lanzamos?</h2><p data-i18n="p.ctaBody">Cuéntanos y te avisamos cuando Walk&amp;Wag esté listo.</p></div>
-          <a class="btn btn-primary" href="../contacto/index.html" data-i18n="common.contact">Contactar</a>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-head"><h2 class="display-md" data-i18n="p.relatedTitle">También te puede interesar</h2></div>
-        <div class="related-grid">
-          <a class="related-card" href="https://reviaty.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer"><h3>Reviaty AI</h3><p data-i18n="p.r1">Reputación con IA.</p><span class="btn-text"><span data-i18n="common.learnMore">Más información</span> <span class="arrow">→</span></span></a>
-          <a class="related-card" href="ibocast.html"><h3>Ibocast Media Player</h3><p data-i18n="p.r2">Reproductor multimedia.</p><span class="btn-text"><span data-i18n="common.learnMore">Más información</span> <span class="arrow">→</span></span></a>
-          <a class="related-card" href="../servicios/index.html"><h3 data-i18n="p.r3t">Servicios</h3><p data-i18n="p.r3">Desarrollo a medida.</p><span class="btn-text"><span data-i18n="common.learnMore">Más información</span> <span class="arrow">→</span></span></a>
+
+    <section class="ww-section ww-section--cream" id="download">
+      <div class="ww-wrap">
+        <div class="ww-download ww-reveal">
+          <div>
+            <div class="ww-platforms" aria-label="Platforms">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                iOS
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
+                Android
+              </span>
+              <span data-i18n="ww.realtime">Real-time sync</span>
+            </div>
+            <h2 data-i18n="ww.dlTitle">One walk. Every device.</h2>
+            <p data-i18n="ww.dlLead">Seamless real-time sync between iOS and Android — so every dog owner nearby can join the pack.</p>
+            <div class="ww-store-row">
+              <a class="ww-store" href="#download">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                <span class="ww-store-copy"><small data-i18n="ww.iosSmall">Download on the</small><strong data-i18n="ww.iosStrong">App Store</strong></span>
+              </a>
+              <a class="ww-store" href="#download">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
+                <span class="ww-store-copy"><small data-i18n="ww.androidSmall">Get it on</small><strong data-i18n="ww.androidStrong">Google Play</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="ww-qr-block">
+            <div class="ww-qr">
+              <img id="ww-qr-img" src="" alt="QR code to download Walk&amp;Wag" width="148" height="148">
+            </div>
+            <small data-i18n="ww.qrHint">Scan to open this page on your phone</small>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <div id="site-footer"></div>
+
+  <footer class="ww-footer">
+    <div class="ww-wrap">
+      <div class="ww-footer-grid">
+        <div class="ww-footer-brand">
+          <a class="ww-brand" href="#top">
+            <img src="../images/products/Walk-and-Wag.png" alt="" width="40" height="40">
+            <span>Walk&amp;Wag</span>
+          </a>
+          <p data-i18n="ww.footerTag">The privacy-first discovery app for dog owners. A Neurix Innovación product.</p>
+          <div class="ww-social" aria-label="Social">
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 3H21l-6.6 7.55L22 21h-5.7l-4.46-5.83L6.4 21H3.6l7.05-8.06L2 3h5.85l4.03 5.33L18.2 3zm-1 16.2h1.58L7.05 4.7H5.35L17.2 19.2z"/></svg>
+            </a>
+            <a href="mailto:hi@neurixinnovacion.es" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="ww-footer-col">
+          <h3 data-i18n="ww.quickLinks">Quick links</h3>
+          <a href="../contacto/index.html" data-i18n="ww.privacy">Privacy Policy</a>
+          <a href="../contacto/index.html" data-i18n="ww.terms">Terms of Service</a>
+          <a href="mailto:hi@neurixinnovacion.es" data-i18n="ww.support">Support Email</a>
+          <a href="../contacto/index.html" data-i18n="ww.guidelines">@username Dog Search Guidelines</a>
+        </div>
+        <div class="ww-footer-col">
+          <h3 data-i18n="ww.company">Company</h3>
+          <a href="../index.html">Neurix Innovación</a>
+          <a href="index.html" data-i18n="ww.allProducts">All products</a>
+          <a href="../contacto/index.html" data-i18n="ww.contact">Contact</a>
+        </div>
+      </div>
+      <div class="ww-footer-bottom">
+        <span data-i18n="ww.rights">© Walk&amp;Wag by Neurix Innovación S.L. All rights reserved.</span>
+        <a href="../index.html">neurixinnovacion.es</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
-    window.NEURIX_I18N = {
-      es: {
-        "p.title": "La comunidad de paseos, rutas y momentos con tu perro.",
-        "p.lead": "Walk&Wag es la aplicación móvil de Neurix para propietarios de perros: rutas, quedadas y momentos compartidos alrededor de lo que más importa — tu compañero.",
-        "p.notify": "Avisarme del lanzamiento",
-        "p.whyTitle": "Más que una app de paseos",
-        "p.whyLead": "Conectar personas que comparten la vida con un perro: descubrir rutas, quedar y guardar momentos.",
-        "p.b1t": "Rutas", "p.b1d": "Descubre y comparte recorridos pensados para pasear con tu perro.",
-        "p.b2t": "Quedadas", "p.b2d": "Organiza encuentros con otros propietarios cerca de ti.",
-        "p.b3t": "Momentos", "p.b3d": "Guarda y comparte lo cotidiano que hace especial la vida con tu perro.",
-        "p.featTitle": "En desarrollo",
-        "p.f1t": "Comunidad local", "p.f1d": "Conexión entre propietarios con intereses y zonas en común.",
-        "p.f2t": "Experiencia móvil", "p.f2d": "Diseño pensado para usarse en movimiento, durante el paseo.",
-        "p.f3t": "Producto Neurix", "p.f3d": "Misma exigencia de calidad, UX y arquitectura que el resto de la suite.",
-        "p.f4t": "Próximamente", "p.f4d": "Estamos construyendo Walk&Wag. Si quieres ser de los primeros, escríbenos.",
-        "p.ctaTitle": "¿Quieres saber cuándo lanzamos?", "p.ctaBody": "Cuéntanos y te avisamos cuando Walk&Wag esté listo.",
-        "p.relatedTitle": "También te puede interesar",
-        "p.r1": "Reputación con IA.", "p.r2": "Reproductor multimedia.", "p.r3t": "Servicios", "p.r3": "Desarrollo a medida."
-      },
-      en: {
-        "p.title": "The community for walks, routes and moments with your dog.",
-        "p.lead": "Walk&Wag is Neurix’s mobile app for dog owners: routes, meetups and shared moments around what matters most — your companion.",
-        "p.notify": "Notify me at launch",
-        "p.whyTitle": "More than a walking app",
-        "p.whyLead": "Connecting people who share life with a dog: discover routes, meet up and keep moments.",
-        "p.b1t": "Routes", "p.b1d": "Discover and share paths made for walking with your dog.",
-        "p.b2t": "Meetups", "p.b2d": "Organize gatherings with other owners near you.",
-        "p.b3t": "Moments", "p.b3d": "Save and share the everyday that makes life with your dog special.",
-        "p.featTitle": "In development",
-        "p.f1t": "Local community", "p.f1d": "Connecting owners with shared interests and areas.",
-        "p.f2t": "Mobile experience", "p.f2d": "Designed to be used on the move, during the walk.",
-        "p.f3t": "Neurix product", "p.f3d": "Same quality, UX and architecture bar as the rest of the suite.",
-        "p.f4t": "Coming soon", "p.f4d": "We’re building Walk&Wag. Want to be among the first? Write to us.",
-        "p.ctaTitle": "Want to know when we launch?", "p.ctaBody": "Tell us and we’ll notify you when Walk&Wag is ready.",
-        "p.relatedTitle": "You may also like",
-        "p.r1": "Reputation with AI.", "p.r2": "Media player.", "p.r3t": "Services", "p.r3": "Custom development."
+    (() => {
+      const dict = {
+        en: {
+          "ww.downloadAria": "Download Walk&Wag",
+          "ww.getOn": "Get the app",
+          "ww.download": "Download",
+          "ww.heroTitle": "Find Dog Pals Nearby, Without Sharing Your Privacy.",
+          "ww.heroLead": "The Tinder-style discovery app for dog owners. Match with local pup pals, send a Bark, and explore live routes safely together.",
+          "ww.iosSmall": "Download on the",
+          "ww.iosStrong": "App Store",
+          "ww.androidSmall": "Get it on",
+          "ww.androidStrong": "Google Play",
+          "ww.watchHow": "Watch How It Works 🐾",
+          "ww.featTitle": "Built for walks. Obsessed with privacy.",
+          "ww.featLead": "Everything you need to discover dog pals nearby — without exposing your location or phone number.",
+          "ww.f1t": "Tinder for Dogs",
+          "ww.f1d": "Swipe through nearby pup profiles — photo, breed, energy level, and distance — before starting your walk.",
+          "ww.f2t": "Absolute Location Privacy",
+          "ww.f2d": "Your raw GPS location stays 100% hidden on WagMap until a mutual Bark request is accepted.",
+          "ww.f3t": "Barks Chat",
+          "ww.f3d": "Connect and coordinate walk times via @username — no personal phone numbers required.",
+          "ww.f4t": "Go Live Stats",
+          "ww.f4d": "Track walk duration, distance covered (km), and your walk history in real time.",
+          "ww.howTitle": "How it works",
+          "ww.howLead": "Three simple steps from discovery to a safe walk together.",
+          "ww.s1t": "Go Live",
+          "ww.s1d": "Start your walk session and browse nearby dog pals one by one.",
+          "ww.s2t": "Send a Bark",
+          "ww.s2d": "Request to join a walk with a simple tap — mutual consent first.",
+          "ww.s3t": "WagMap Together",
+          "ww.s3d": "Once accepted, view live locations and start walking together safely.",
+          "ww.realtime": "Real-time sync",
+          "ww.dlTitle": "One walk. Every device.",
+          "ww.dlLead": "Seamless real-time sync between iOS and Android — so every dog owner nearby can join the pack.",
+          "ww.qrHint": "Scan to open this page on your phone",
+          "ww.footerTag": "The privacy-first discovery app for dog owners. A Neurix Innovación product.",
+          "ww.quickLinks": "Quick links",
+          "ww.privacy": "Privacy Policy",
+          "ww.terms": "Terms of Service",
+          "ww.support": "Support Email",
+          "ww.guidelines": "@username Dog Search Guidelines",
+          "ww.company": "Company",
+          "ww.allProducts": "All products",
+          "ww.contact": "Contact",
+          "ww.rights": "© Walk&Wag by Neurix Innovación S.L. All rights reserved."
+        },
+        es: {
+          "ww.downloadAria": "Descargar Walk&Wag",
+          "ww.getOn": "Consigue la app",
+          "ww.download": "Descargar",
+          "ww.heroTitle": "Encuentra compañeros de paseo cerca, sin compartir tu privacidad.",
+          "ww.heroLead": "La app de descubrimiento estilo Tinder para dueños de perros. Haz match con pals locales, envía un Bark y explora rutas en vivo con seguridad.",
+          "ww.iosSmall": "Descárgala en",
+          "ww.iosStrong": "App Store",
+          "ww.androidSmall": "Disponible en",
+          "ww.androidStrong": "Google Play",
+          "ww.watchHow": "Ver cómo funciona 🐾",
+          "ww.featTitle": "Hecha para pasear. Obsesionada con la privacidad.",
+          "ww.featLead": "Todo lo que necesitas para descubrir compañeros cerca — sin exponer tu ubicación ni tu teléfono.",
+          "ww.f1t": "Tinder para perros",
+          "ww.f1d": "Desliza perfiles cercanos — foto, raza, nivel de energía y distancia — antes de empezar el paseo.",
+          "ww.f2t": "Privacidad de ubicación absoluta",
+          "ww.f2d": "Tu GPS en bruto permanece 100% oculto en WagMap hasta que un Bark mutuo sea aceptado.",
+          "ww.f3t": "Barks Chat",
+          "ww.f3d": "Coordina horarios de paseo con @username — sin compartir números de teléfono.",
+          "ww.f4t": "Go Live Stats",
+          "ww.f4d": "Sigue duración, distancia (km) e historial de paseos en tiempo real.",
+          "ww.howTitle": "Cómo funciona",
+          "ww.howLead": "Tres pasos simples del descubrimiento a un paseo seguro juntos.",
+          "ww.s1t": "Go Live",
+          "ww.s1d": "Inicia tu sesión de paseo y explora compañeros cercanos uno a uno.",
+          "ww.s2t": "Envía un Bark",
+          "ww.s2d": "Pide unirte a un paseo con un toque — primero el consentimiento mutuo.",
+          "ww.s3t": "WagMap juntos",
+          "ww.s3d": "Al aceptarse, ved ubicaciones en vivo y pasead juntos con seguridad.",
+          "ww.realtime": "Sincronización en tiempo real",
+          "ww.dlTitle": "Un paseo. Todos los dispositivos.",
+          "ww.dlLead": "Sincronización fluida entre iOS y Android — para que cada dueño cercano pueda unirse.",
+          "ww.qrHint": "Escanea para abrir esta página en el móvil",
+          "ww.footerTag": "La app de descubrimiento privacy-first para dueños de perros. Un producto de Neurix Innovación.",
+          "ww.quickLinks": "Enlaces rápidos",
+          "ww.privacy": "Política de privacidad",
+          "ww.terms": "Términos de servicio",
+          "ww.support": "Email de soporte",
+          "ww.guidelines": "Guía de búsqueda @username",
+          "ww.company": "Empresa",
+          "ww.allProducts": "Todos los productos",
+          "ww.contact": "Contacto",
+          "ww.rights": "© Walk&Wag por Neurix Innovación S.L. Todos los derechos reservados."
+        }
+      };
+
+      function setLang(lang) {
+        const pack = dict[lang] || dict.en;
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach((node) => {
+          const key = node.getAttribute("data-i18n");
+          if (pack[key] != null) node.textContent = pack[key];
+        });
+        document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+          const key = node.getAttribute("data-i18n-aria");
+          if (pack[key] != null) node.setAttribute("aria-label", pack[key]);
+        });
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          const on = btn.dataset.lang === lang;
+          btn.classList.toggle("is-active", on);
+          btn.setAttribute("aria-pressed", String(on));
+        });
+        localStorage.setItem("ww-lang", lang);
       }
-    };
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.addEventListener("click", () => setLang(btn.dataset.lang));
+      });
+
+      const stored = localStorage.getItem("ww-lang") || localStorage.getItem("neurix-lang");
+      setLang(stored === "es" || stored === "en" ? stored : "en");
+
+      const header = document.getElementById("ww-header");
+      window.addEventListener(
+        "scroll",
+        () => header?.classList.toggle("is-scrolled", window.scrollY > 8),
+        { passive: true }
+      );
+
+      const qr = document.getElementById("ww-qr-img");
+      if (qr) {
+        const target = encodeURIComponent(window.location.href.split("#")[0]);
+        qr.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=8&data=${target}`;
+      }
+
+      const reveals = document.querySelectorAll(".ww-reveal");
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-in");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.18, rootMargin: "0px 0px -40px 0px" }
+        );
+        reveals.forEach((el) => io.observe(el));
+      } else {
+        reveals.forEach((el) => el.classList.add("is-in"));
+      }
+    })();
   </script>
-  <script src="../js/main.js"></script>
 </body>
 </html>
