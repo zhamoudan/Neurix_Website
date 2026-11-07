@@ -2370,8 +2370,9 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  /* Keep 3 product tiles per row on tablet; drop to 2 only on phones */
   .dir-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .story-grid,
