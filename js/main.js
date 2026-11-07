@@ -111,9 +111,9 @@
           </div>
           <div class="footer-col">
             <h3 data-i18n="footer.products">Productos</h3>
-            <a href="${base}productos/reviaty.html">Reviaty AI</a>
-            <a href="${base}productos/roomly.html">Roomly</a>
-            <a href="${base}productos/pozlee.html">Pozlee</a>
+            <a href="https://reviaty.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer">Reviaty AI</a>
+            <a href="https://iroomfy.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer">iRoomfy</a>
+            <a href="https://pozlee.neurixinnovacion.es/" target="_blank" rel="noopener noreferrer">Pozlee</a>
             <a href="${base}productos/factura.html">Factura</a>
             <a href="${base}productos/tvcloud.html">TVcloud</a>
             <a href="${base}productos/ibocast.html">Ibocast Media Player</a>
