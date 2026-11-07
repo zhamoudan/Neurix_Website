@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Walk&Wag — privacy-first walk discovery for dog owners. Find nearby pup pals, send a Bark, and explore live routes safely together.">
-  <title>Walk&amp;Wag — Find Dog Pals Nearby</title>
+  <title>Walk&amp;Wag — Walk Safely, Connect Nearby</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,14 +35,16 @@
 
   <main id="contenido">
     <section class="ww-hero" id="top">
+      <div class="ww-hero-glow" aria-hidden="true"></div>
       <div class="ww-wrap ww-hero-grid">
         <div class="ww-hero-copy ww-reveal">
-          <p class="ww-kicker">
-            <img src="../images/products/Walk-and-Wag.png" alt="" width="44" height="44">
-            Walk&amp;Wag
+          <p class="ww-brand-mark">
+            <img src="../images/products/Walk-and-Wag.png" alt="" width="40" height="40">
+            <span>Walk&amp;Wag</span>
           </p>
-          <h1 data-i18n="ww.heroTitle">Find Dog Pals Nearby, Without Sharing Your Privacy.</h1>
-          <p class="ww-lead" data-i18n="ww.heroLead">Discover nearby dog owners, match with local pup pals, send a Bark, and explore live routes together — with your location private until you both accept.</p>
+          <span class="ww-pill" data-i18n="ww.pill">🐾 The Privacy-First Tinder for Dogs App</span>
+          <h1 data-i18n="ww.heroTitle">Walk Safely, Connect Nearby.</h1>
+          <p class="ww-lead ww-lead--gradient" data-i18n="ww.heroLead">Match pup pals, send a Bark, and explore WagMap together.</p>
           <div class="ww-hero-actions">
             <div class="ww-store-row">
               <a class="ww-store" href="#download" id="cta-ios">
@@ -56,38 +58,54 @@
             </div>
             <a class="ww-link-secondary" href="#how" data-i18n="ww.watchHow">Watch How It Works 🐾</a>
           </div>
+          <ul class="ww-metrics" aria-label="Highlights">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span data-i18n="ww.m1">100% Privacy-Protected Location</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 10-14h-7l0-6z"/></svg>
+              <span data-i18n="ww.m2">Instant Bark Match</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+              <span data-i18n="ww.m3">Cross-Platform iOS &amp; Android</span>
+            </li>
+          </ul>
         </div>
 
         <div class="ww-phones ww-reveal" aria-hidden="true">
-          <div class="ww-phone ww-phone--ios">
-            <div class="ww-phone-screen">
-              <div class="ww-phone-notch"></div>
-              <div class="ww-phone-bar"><span>9:41</span><span>●●●</span></div>
-              <div class="ww-phone-title">Go Live</div>
-              <div class="ww-swipe-stack">
-                <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
-                <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
-                <article class="ww-swipe-card">
-                  <div class="ww-swipe-photo">
-                    <div class="ww-swipe-meta">
-                      <strong>Luna · Golden</strong>
-                      <span>High energy · 0.4 km</span>
+          <div class="ww-phone-stage">
+            <div class="ww-phone ww-phone--ios ww-tilt">
+              <div class="ww-phone-screen">
+                <div class="ww-phone-notch"></div>
+                <div class="ww-phone-bar"><span>9:41</span><span>●●●</span></div>
+                <div class="ww-phone-title">Go Live</div>
+                <div class="ww-swipe-stack">
+                  <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
+                  <article class="ww-swipe-card"><div class="ww-swipe-photo"></div></article>
+                  <article class="ww-swipe-card">
+                    <div class="ww-swipe-photo">
+                      <div class="ww-swipe-meta">
+                        <strong>Luna · Golden</strong>
+                        <span>High energy · 0.4 km</span>
+                      </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </div>
+                <div class="ww-swipe-actions"><span>✕</span><span>♥</span><span>↗</span></div>
               </div>
-              <div class="ww-swipe-actions"><span>✕</span><span>♥</span><span>↗</span></div>
             </div>
-          </div>
-          <div class="ww-phone ww-phone--android">
-            <div class="ww-phone-screen">
-              <div class="ww-phone-bar"><span>9:41</span><span>▾</span></div>
-              <div class="ww-phone-title">WagMap</div>
-              <div class="ww-map-screen">
-                <span class="ww-map-pin ww-map-pin--a"></span>
-                <span class="ww-map-route"></span>
-                <span class="ww-map-pin ww-map-pin--b"></span>
-                <div class="ww-map-chip"><em>2</em> accepted partners · privacy on</div>
+            <div class="ww-phone ww-phone--android ww-tilt">
+              <div class="ww-phone-screen">
+                <div class="ww-phone-bar"><span>9:41</span><span>▾</span></div>
+                <div class="ww-phone-title">WagMap</div>
+                <div class="ww-map-screen">
+                  <span class="ww-map-pin ww-map-pin--a"></span>
+                  <span class="ww-map-route"></span>
+                  <span class="ww-map-pin ww-map-pin--b"></span>
+                  <div class="ww-map-chip"><em>2</em> matched · privacy on</div>
+                </div>
               </div>
             </div>
           </div>
@@ -168,60 +186,68 @@
 
     <section class="ww-section ww-section--cream" id="download">
       <div class="ww-wrap">
-        <div class="ww-download ww-reveal">
-          <div class="ww-download-head">
-            <div class="ww-platforms" aria-label="Platforms">
-              <span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                iOS
-              </span>
-              <span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
-                Android
-              </span>
-              <span data-i18n="ww.realtime">Real-time sync</span>
-            </div>
-            <h2 data-i18n="ww.dlTitle">One walk. Every device.</h2>
-            <p data-i18n="ww.dlLead">Seamless real-time sync between iOS and Android — so every dog owner nearby can join the pack.</p>
+        <div class="ww-download-head ww-reveal">
+          <div class="ww-platforms" aria-label="Platforms">
+            <span data-i18n="ww.realtime">Real-time sync</span>
+            <span data-i18n="ww.crossPlat">iOS + Android</span>
           </div>
-          <div class="ww-dl-grid">
-            <a class="ww-dl-card" href="#download" id="dl-ios">
-              <div class="ww-dl-card-top">
-                <span class="ww-dl-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                </span>
-                <div>
-                  <h3 data-i18n="ww.iosCardTitle">iPhone &amp; iPad</h3>
-                  <p data-i18n="ww.iosCardBody">Get Walk&amp;Wag on the App Store and start discovering walk pals near you.</p>
-                </div>
+          <h2 data-i18n="ww.dlTitle">One walk. Every device.</h2>
+          <p data-i18n="ww.dlLead">Seamless real-time sync between iOS and Android — so every dog owner nearby can join the pack.</p>
+        </div>
+        <div class="ww-dl-grid ww-reveal">
+          <article class="ww-dl-card ww-dl-card--ios" data-dl-card>
+            <div class="ww-dl-card-top">
+              <span class="ww-dl-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              </span>
+              <div>
+                <h3 data-i18n="ww.iosCardTitle">Download for iOS</h3>
+                <p data-i18n="ww.iosCardBody">Requires iOS 15.0 or later</p>
               </div>
-              <span class="ww-dl-badge">
+            </div>
+            <ul class="ww-dl-feats">
+              <li data-i18n="ww.iosF1">Apple Watch companion sync</li>
+              <li data-i18n="ww.iosF2">Smooth Haptic Bark feedback</li>
+            </ul>
+            <div class="ww-dl-actions">
+              <a class="ww-dl-badge" href="#download">
                 <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
                 <span><small data-i18n="ww.iosSmall">Download on the</small><strong data-i18n="ww.iosStrong">App Store</strong></span>
+              </a>
+              <button type="button" class="ww-qr-btn" data-qr-toggle aria-expanded="false" data-i18n="ww.showQr">Show QR</button>
+            </div>
+            <div class="ww-dl-qr-pop" data-qr-pop hidden>
+              <img class="ww-qr-img" src="" alt="" width="120" height="120">
+              <small data-i18n="ww.qrHint">Scan to open on your phone</small>
+            </div>
+          </article>
+
+          <article class="ww-dl-card ww-dl-card--android" data-dl-card>
+            <div class="ww-dl-card-top">
+              <span class="ww-dl-icon ww-dl-icon--play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
               </span>
-            </a>
-            <a class="ww-dl-card" href="#download" id="dl-android">
-              <div class="ww-dl-card-top">
-                <span class="ww-dl-icon ww-dl-icon--play" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
-                </span>
-                <div>
-                  <h3 data-i18n="ww.androidCardTitle">Android phones</h3>
-                  <p data-i18n="ww.androidCardBody">Install from Google Play and stay in sync with iOS walk partners in real time.</p>
-                </div>
+              <div>
+                <h3 data-i18n="ww.androidCardTitle">Get it on Android</h3>
+                <p data-i18n="ww.androidCardBody">Compatible with Android 10.0+</p>
               </div>
-              <span class="ww-dl-badge">
+            </div>
+            <ul class="ww-dl-feats">
+              <li data-i18n="ww.androidF1">Low-battery GPS tracking mode</li>
+              <li data-i18n="ww.androidF2">Instant background notifications</li>
+            </ul>
+            <div class="ww-dl-actions">
+              <a class="ww-dl-badge" href="#download">
                 <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M3.18 23.04c.23.1.48.14.73.12l.14-.02 11.2-4.55-2.55-2.55-9.52 7zm.2-20.9C2.7 2.37 2.5 3 2.86 3.5l9.03 9.03 2.55-2.55L3.38 2.14zm18.1 8.52-3.02-1.72-2.73 2.73 2.73 2.73 3.02-1.72a1.5 1.5 0 0 0 0-2.02zM13.3 12.67 4.1 21.86c.3.28.72.35 1.1.18l12.4-5.04-4.3-4.33zM5.2 2.14l8.1 8.1 4.3-4.3L6.3 1.96A1.25 1.25 0 0 0 5.2 2.14z"/></svg>
                 <span><small data-i18n="ww.androidSmall">Get it on</small><strong data-i18n="ww.androidStrong">Google Play</strong></span>
-              </span>
-            </a>
-            <div class="ww-qr-block">
-              <div class="ww-qr">
-                <img id="ww-qr-img" src="" alt="QR code to download Walk&amp;Wag" width="128" height="128">
-              </div>
-              <small data-i18n="ww.qrHint">Scan to open this page on your phone</small>
+              </a>
+              <button type="button" class="ww-qr-btn" data-qr-toggle aria-expanded="false" data-i18n="ww.showQr">Show QR</button>
             </div>
-          </div>
+            <div class="ww-dl-qr-pop" data-qr-pop hidden>
+              <img class="ww-qr-img" src="" alt="" width="120" height="120">
+              <small data-i18n="ww.qrHint">Scan to open on your phone</small>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -276,16 +302,26 @@
           "ww.downloadAria": "Download Walk&Wag",
           "ww.getOn": "Get the app",
           "ww.download": "Download",
-          "ww.heroTitle": "Find Dog Pals Nearby, Without Sharing Your Privacy.",
-          "ww.heroLead": "Discover nearby dog owners, match with local pup pals, send a Bark, and explore live routes together — with your location private until you both accept.",
+          "ww.pill": "🐾 The Privacy-First Tinder for Dogs App",
+          "ww.heroTitle": "Walk Safely, Connect Nearby.",
+          "ww.heroLead": "Match pup pals, send a Bark, and explore WagMap together.",
+          "ww.m1": "100% Privacy-Protected Location",
+          "ww.m2": "Instant Bark Match",
+          "ww.m3": "Cross-Platform iOS & Android",
           "ww.iosSmall": "Download on the",
           "ww.iosStrong": "App Store",
           "ww.androidSmall": "Get it on",
           "ww.androidStrong": "Google Play",
-          "ww.iosCardTitle": "iPhone & iPad",
-          "ww.iosCardBody": "Get Walk&Wag on the App Store and start discovering walk pals near you.",
-          "ww.androidCardTitle": "Android phones",
-          "ww.androidCardBody": "Install from Google Play and stay in sync with iOS walk partners in real time.",
+          "ww.iosCardTitle": "Download for iOS",
+          "ww.iosCardBody": "Requires iOS 15.0 or later",
+          "ww.iosF1": "Apple Watch companion sync",
+          "ww.iosF2": "Smooth Haptic Bark feedback",
+          "ww.androidCardTitle": "Get it on Android",
+          "ww.androidCardBody": "Compatible with Android 10.0+",
+          "ww.androidF1": "Low-battery GPS tracking mode",
+          "ww.androidF2": "Instant background notifications",
+          "ww.showQr": "Show QR",
+          "ww.hideQr": "Hide QR",
           "ww.watchHow": "Watch How It Works 🐾",
           "ww.featTitle": "Built for walks. Obsessed with privacy.",
           "ww.featLead": "Everything you need to discover dog pals nearby — without exposing your location or phone number.",
@@ -306,9 +342,10 @@
           "ww.s3t": "WagMap Together",
           "ww.s3d": "Once accepted, view live locations and start walking together safely.",
           "ww.realtime": "Real-time sync",
+          "ww.crossPlat": "iOS + Android",
           "ww.dlTitle": "One walk. Every device.",
           "ww.dlLead": "Seamless real-time sync between iOS and Android — so every dog owner nearby can join the pack.",
-          "ww.qrHint": "Scan to open this page on your phone",
+          "ww.qrHint": "Scan to open on your phone",
           "ww.footerTag": "The privacy-first discovery app for dog owners. A Neurix Innovación product.",
           "ww.quickLinks": "Quick links",
           "ww.privacy": "Privacy Policy",
@@ -324,16 +361,26 @@
           "ww.downloadAria": "Descargar Walk&Wag",
           "ww.getOn": "Consigue la app",
           "ww.download": "Descargar",
-          "ww.heroTitle": "Encuentra compañeros de paseo cerca, sin compartir tu privacidad.",
-          "ww.heroLead": "Descubre dueños cerca, conecta con pals locales, envía un Bark y explorad rutas en vivo — con tu ubicación privada hasta que ambos aceptéis.",
+          "ww.pill": "🐾 La app privacy-first estilo Tinder para perros",
+          "ww.heroTitle": "Pasea con seguridad. Conecta cerca.",
+          "ww.heroLead": "Haz match con pals, envía un Bark y explorad WagMap juntos.",
+          "ww.m1": "Ubicación 100% protegida",
+          "ww.m2": "Bark Match al instante",
+          "ww.m3": "Multiplataforma iOS y Android",
           "ww.iosSmall": "Descárgala en",
           "ww.iosStrong": "App Store",
           "ww.androidSmall": "Disponible en",
           "ww.androidStrong": "Google Play",
-          "ww.iosCardTitle": "iPhone y iPad",
-          "ww.iosCardBody": "Consigue Walk&Wag en la App Store y empieza a descubrir compañeros de paseo cerca.",
-          "ww.androidCardTitle": "Móviles Android",
-          "ww.androidCardBody": "Instálala desde Google Play y mantente sincronizado con compañeros iOS en tiempo real.",
+          "ww.iosCardTitle": "Descargar para iOS",
+          "ww.iosCardBody": "Requiere iOS 15.0 o posterior",
+          "ww.iosF1": "Sincronización con Apple Watch",
+          "ww.iosF2": "Feedback háptico al Bark",
+          "ww.androidCardTitle": "Consíguela en Android",
+          "ww.androidCardBody": "Compatible con Android 10.0+",
+          "ww.androidF1": "GPS en modo bajo consumo",
+          "ww.androidF2": "Notificaciones en segundo plano",
+          "ww.showQr": "Ver QR",
+          "ww.hideQr": "Ocultar QR",
           "ww.watchHow": "Ver cómo funciona 🐾",
           "ww.featTitle": "Hecha para pasear. Obsesionada con la privacidad.",
           "ww.featLead": "Todo lo que necesitas para descubrir compañeros cerca — sin exponer tu ubicación ni tu teléfono.",
@@ -354,9 +401,10 @@
           "ww.s3t": "WagMap juntos",
           "ww.s3d": "Al aceptarse, ved ubicaciones en vivo y pasead juntos con seguridad.",
           "ww.realtime": "Sincronización en tiempo real",
+          "ww.crossPlat": "iOS + Android",
           "ww.dlTitle": "Un paseo. Todos los dispositivos.",
           "ww.dlLead": "Sincronización fluida entre iOS y Android — para que cada dueño cercano pueda unirse.",
-          "ww.qrHint": "Escanea para abrir esta página en el móvil",
+          "ww.qrHint": "Escanea para abrir en el móvil",
           "ww.footerTag": "La app de descubrimiento privacy-first para dueños de perros. Un producto de Neurix Innovación.",
           "ww.quickLinks": "Enlaces rápidos",
           "ww.privacy": "Política de privacidad",
@@ -387,6 +435,12 @@
           btn.setAttribute("aria-pressed", String(on));
         });
         localStorage.setItem("ww-lang", lang);
+        document.querySelectorAll("[data-dl-card]").forEach((card) => {
+          const btn = card.querySelector("[data-qr-toggle]");
+          const pop = card.querySelector("[data-qr-pop]");
+          if (!btn || !pop) return;
+          btn.textContent = pop.hidden ? pack["ww.showQr"] : pack["ww.hideQr"];
+        });
       }
 
       document.querySelectorAll(".lang-btn").forEach((btn) => {
@@ -403,11 +457,39 @@
         { passive: true }
       );
 
-      const qr = document.getElementById("ww-qr-img");
-      if (qr) {
-        const target = encodeURIComponent(window.location.href.split("#")[0]);
-        qr.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=8&data=${target}`;
-      }
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=8&data=${encodeURIComponent(window.location.href.split("#")[0])}`;
+      document.querySelectorAll(".ww-qr-img").forEach((img) => {
+        img.src = qrUrl;
+        img.alt = "QR code";
+      });
+
+      const langPack = () => dict[document.documentElement.lang] || dict.en;
+
+      document.querySelectorAll("[data-dl-card]").forEach((card) => {
+        const btn = card.querySelector("[data-qr-toggle]");
+        const pop = card.querySelector("[data-qr-pop]");
+        if (!btn || !pop) return;
+
+        const setOpen = (open) => {
+          pop.hidden = !open;
+          card.classList.toggle("is-qr-open", open);
+          btn.setAttribute("aria-expanded", String(open));
+          const pack = langPack();
+          btn.textContent = open ? pack["ww.hideQr"] : pack["ww.showQr"];
+        };
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          setOpen(pop.hidden);
+        });
+
+        card.addEventListener("mouseenter", () => {
+          if (window.matchMedia("(hover: hover)").matches) setOpen(true);
+        });
+        card.addEventListener("mouseleave", () => {
+          if (window.matchMedia("(hover: hover)").matches) setOpen(false);
+        });
+      });
 
       const reveals = document.querySelectorAll(".ww-reveal");
       if ("IntersectionObserver" in window) {
